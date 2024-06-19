@@ -10,7 +10,7 @@
         list-style-type:none;
         margin: 0;
         padding: 0;
-        background-color: black;
+        background-color: #6f2df5;
         overflow: hidden;
     }
     li{
@@ -41,23 +41,43 @@
     }
     .content a{
         color: black;
+        margin-right: 20px;
     }
     .content a:hover{
         background-color: #d6d6d6;
     }
+    .searchbar{
+        margin-top: 8px;
+        height: 28px;
+        width: 200px;
+        border-radius: 8px;
+        border-width: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        
+    }
+    .search{
+        display: block;
+        margin-left: 400px;
+    }
 </style>
 <body>
     <ul>
-        <li style="float: right;"><a href="#home">Home</a></li>
-        <li style="float: right;"><a href="#news">News</a></li>
-        <li style="float: right;"><a href="#gallery">Gallery</a></li>
-        <li style="float: right;"><a href="#about">About</a></li>
+        <li><a href="#home"><img src="/HTML/IMG/bootstrap-5-1.svg" width="20px" height="auto"></a></li>
 
-        <li class="dropdown">
-            <a class="#button" href="#more">More </a>
+        <li><a href="#news">Docs</a></li>
+        <li><a href="#gallery">Examples</a></li>
+        <li><a href="#gallery">Icons</a></li>
+        <li><a href="#gallery">Themes</a></li>
+        <li><a href="#gallery">Blog</a></li>
+        
+        <li class="search"><input type=text placeholder=search class="searchbar"></li>
+
+        
+        <li style="float: right;"class="dropdown">
+            <a class="#button" href="#more">Light </a>
             <div class="content">
-                <a href="#mentors">Our Mentors</a>
-                <a href="#contact">Contact Us</a>  
+                <a href="#mentors">Dark</a>
+                <a href="#contact">Follow System</a>  
             </div>
         </li>
     </ul>

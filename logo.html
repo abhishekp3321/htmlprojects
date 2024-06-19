@@ -1,68 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profile</title>
 </head>
 <style>
-    h1{
+    .head {
+        justify-content: center;
+        display: flex;
+    }
+
+    image {
+        height: 200px;
+        width: 200px;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .child {
+        flex:33%;
         text-align: center;
-        color: brown;
     }
-    image{
-        height: 400px;
-        width:400px;    
-    }
-    .main1,.main2{
-        display :flex;
-    }
-    .main1 > div,.main2 > div{
-        width:300px;
-        height: 300px;
-        text-align: center;
-        padding: 10px;
-        margin: 1px;
-    }
-    .main1 > div:hover,.main2 > div:hover {
+
+    .child:hover {
         background-color: lightgray;
     }
+
+    @media screen and (max-width: 900px) {
+        .child{
+            flex:50%
+        }
+    }
+    @media screen and (max-width: 300px) {
+        .child{
+            flex:100%
+        }
+    }
+        
 </style>
+
 <body>
-    <h1>Car brands</h1>
-    <div class="main1">
-        <div class="lg1">
-            <img src="bmw.jpg" alt="IMAGE NOT FOUND">
+    <div class="head">
+        <h1>Car brands</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="child">
+            <img src="/HTML/IMG/bmw.jpg" alt="IMAGE NOT FOUND">
             <h2>BMW</h2>
             <h3><a href="https://www.bmw.in/en/index.html">visit</a></h3>
         </div>
-        <div class="lg2">
-            <img src="benz.jpg" alt="IMAGE NOT FOUND">
+
+        <div class="child">
+            <img src="/HTML/IMG/benz.jpg" alt="IMAGE NOT FOUND">
             <h2>Mercedes-benz</h2>
-            <h3><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjprOaivLyGAxXwqGYCHaqbKKoYABAAGgJzbQ&ase=2&gclid=Cj0KCQjwsPCyBhD4ARIsAPaaRf0eyrsxDYdzwGyx-9yBnvm1J9DhkLzE7PjlYUSSRcyJZXDQxPgCasQaAhQUEALw_wcB&ohost=www.google.com&cid=CAESVuD2gWLEvs2ODHSmskj-UKudVVblosRkiG97XhJsRDXcRMvRpiFxRD9oae-fwgHkpuR3QUydRdzmfl7lNIG8EAFQ-x41LMtvBqNhr2nUfsnABkPGN8Nb&sig=AOD64_38zsYFrO2ufQBX5he9aPg2bsmdkA&q&nis=4&adurl&ved=2ahUKEwiGkdqivLyGAxUb-DgGHRpEAaQQ0Qx6BAgEEAE">visit</a></h3>
+            </h3>
         </div>
-        <div class="lg3">
-            <img src="audi.png" alt="IMAGE NOT FOUND">
+
+        <div class="child">
+            <img src="/HTML/IMG/audi.png" alt="IMAGE NOT FOUND">
             <h2>Audi</h2>
             <h3><a href="https://www.audi.in/in/web/en.html">visit</a></h3>
         </div>
-    </div>
-    <div class="main2">
-        <div class="lg4">
-            <img src="porsche.jpg" alt="IMAGE NOT FOUND">
+
+        <div class="child">
+            <img src="/HTML/IMG/porsche.jpg" alt="IMAGE NOT FOUND">
             <h2>porsche</h2>
             <h3><a href="https://www.porsche.com/middle-east/_india_/">visit</a></h3>
         </div>
-        <div class="lg5">
-            <img src="volkswagen.jpg" alt="IMAGE NOT FOUND">
+
+        <div class="child">
+            <img src="/HTML/IMG/volkswagen.jpg" alt="IMAGE NOT FOUND">
             <h2>volkswagen</h2>
             <h3><a href="https://www.volkswagen.co.in/en.html">visit</a></h3>
         </div>
-        <div class="lg6">
-            <img src="lamborgini.jpg" alt="IMAGE NOT FOUND">
+
+        <div class="child">
+            <img src="/HTML/IMG/lamborgini.jpg" alt="IMAGE NOT FOUND">
             <h2>lamborghini</h2>
             <h3><a href="https://www.lamborghini.com/en-en">visit</a></h3>
         </div>
     </div>
 </body>
+
 </html>
